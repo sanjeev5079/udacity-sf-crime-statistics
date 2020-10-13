@@ -14,7 +14,8 @@ How to use the application
    python kafka_server.py
 
 4. Kafka consumer:
-   kafka-console-consumer --topic "udacity.project.calls" --from-beginning --bootstrap-server localhost:9092
+   to see output on console -> kafka-console-consumer --topic "udacity.project.calls" --from-beginning --bootstrap-server localhost:9092
+   or run -> python consumer_server.py
 
 5. Run Spark job:
    spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.4 --master local[*] data_stream.py
